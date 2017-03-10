@@ -378,8 +378,16 @@
       
         
           
-            <h2 id="Windows-平台"><a href="#Windows-平台" class="headerlink" title="Windows 平台"></a>Windows 平台</h2><p>安装Scrapy之前确保已经安装好下列程序:</p>
-<h3 id="1-安装Python"><a href="#1-安装Python" class="headerlink" title="1. 安装Python"></a>1. 安装Python</h3>
+            <h3 id="基于-Windows-平台"><a href="#基于-Windows-平台" class="headerlink" title="基于 Windows 平台"></a>基于 Windows 平台</h3><p>安装Scrapy之前确保已经安装好下列程序:</p>
+<h4 id="1-安装Python"><a href="#1-安装Python" class="headerlink" title="1. 安装Python"></a>1. 安装Python</h4><ul>
+<li>安装过程见→ <a href="http://dataape.github.io/2017/03/09/python%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B%EF%BC%9A%E5%85%A5%E9%97%A8%E8%AF%A6%E8%A7%A3/" target="_blank" rel="external">python初级教程：入门详解</a></li>
+<li>在命令行中输入 <code>python –version</code>，如果没有提示错误，则安装成功。</li>
+</ul>
+<h4 id="2-安装pywin32"><a href="#2-安装pywin32" class="headerlink" title="2.安装pywin32"></a>2.安装pywin32</h4><ul>
+<li>在windows下，必须安装pywin32，安装地址：<a href="http://sourceforge.net/projects/pywin32/" target="_blank" rel="external">http://sourceforge.net/projects/pywin32/</a></li>
+<li>下载直接双击安装，安装完毕之后在python命令行下输入<code>import win32com</code>,如果没有提示错误，则证明安装成功!</li>
+</ul>
+
           
         
       
@@ -506,7 +514,11 @@
       
         
           
-            <p>文章转载，详情请见&gt;&gt;<a href="http://www.crifan.com/files/doc/docbook/python_beginner_tutorial/release/html/python_beginner_tutorial.html#run_your_python_file_in_cmdd" target="_blank" rel="external">python入门</a></p>
+            <blockquote>
+<blockquote>
+<p>文章转载，详情请见 → <a href="http://www.crifan.com/files/doc/docbook/python_beginner_tutorial/release/html/python_beginner_tutorial.html#run_your_python_file_in_cmdd" target="_blank" rel="external">python初级教程</a></p>
+</blockquote>
+</blockquote>
 <blockquote>
 <p>本文是针对Python的初学者，从无到有的介绍Python语言如何入门，主要包括了：Python的简介，如何下载Python，如何安装Python，如何使用终端、Shell，IDE等各种开发环境进行Python开发，Python中的语法和基本知识、概念和逻辑，以及继续深入学习Python的方法，另外还整理一些值得参考的资料。 </p>
 </blockquote>
@@ -677,7 +689,7 @@
 <li>处理极端值</li>
 </ol>
 <h3 id="相关分析"><a href="#相关分析" class="headerlink" title="相关分析"></a>相关分析</h3><ol>
-<li>有些属性可能是冗余的，使用相关分析来识别任意两个给定的属性是否是统计相关的</li>
+<li>在分类和回归之前进行，它试图识别与分类和回归过程显著相关的属性。</li>
 <li>属性子集选择通过删除不相关或冗余的属性减少数据量。属性子集选择的目标是找出最小属性集，使得数据类的概率分布尽可能地接近使用所有属性得到的原分布。</li>
 </ol>
 <table>
