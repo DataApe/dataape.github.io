@@ -383,10 +383,15 @@
 <li>安装过程见→ <a href="http://dataape.github.io/2017/03/09/python%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B%EF%BC%9A%E5%85%A5%E9%97%A8%E8%AF%A6%E8%A7%A3/" target="_blank" rel="external">python初级教程：入门详解</a></li>
 <li>在命令行中输入 <code>python –version</code>，如果没有提示错误，则安装成功。</li>
 </ul>
-<h4 id="2-安装pywin32"><a href="#2-安装pywin32" class="headerlink" title="2.安装pywin32"></a>2.安装pywin32</h4><ul>
+<h4 id="2-安装pywin32"><a href="#2-安装pywin32" class="headerlink" title="2. 安装pywin32"></a>2. 安装pywin32</h4><ul>
 <li>在windows下，必须安装pywin32，安装地址：<a href="http://sourceforge.net/projects/pywin32/" target="_blank" rel="external">http://sourceforge.net/projects/pywin32/</a></li>
 <li>下载直接双击安装，安装完毕之后在python命令行下输入<code>import win32com</code>,如果没有提示错误，则证明安装成功!</li>
 </ul>
+<h4 id="3-安装pip"><a href="#3-安装pip" class="headerlink" title="3. 安装pip"></a>3. 安装pip</h4><p>pip是用来安装其他必要包的工具，首先下载get-pip.py<br>下载好之后，选中该文件夹所在路径，执行命令<code>python get-pip.py</code><br>执行命令后便会安装好pip，同时，它帮你安装了setuptools<br>安装完了之后在命令行执行<code>pip --version</code><br>如果提示不是内部或外部命令，那么就检查一下环境变量有没有配置好。</p>
+<h4 id="4-安装pyOPENSSL"><a href="#4-安装pyOPENSSL" class="headerlink" title="4. 安装pyOPENSSL"></a>4. 安装pyOPENSSL</h4><p>在Windows下，是没有预装pyOPENSSL的，而在Linux下是已经安装好的。<br>安装地址：<a href="https://launchpad.net/pyopenssl" target="_blank" rel="external">https://launchpad.net/pyopenssl</a></p>
+<h4 id="5-安装-lxml"><a href="#5-安装-lxml" class="headerlink" title="5.安装 lxml"></a>5.安装 lxml</h4><p>lxml的详细介绍 <a href="http://lxml.de/" target="_blank" rel="external">link</a> ，是一种使用 Python 编写的库，可以迅速、灵活地处理 XML<br>直接执行如下命令<code>pip install lxml</code><br>就可完成安装，如果提示 Microsoft Visual C++库没安装，则 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=44266" target="_blank" rel="external">link</a> 下载支持的库。</p>
+<h4 id="6-安装Scrapy"><a href="#6-安装Scrapy" class="headerlink" title="6.安装Scrapy"></a>6.安装Scrapy</h4><p>最后就是激动人心的时刻啦，上面的铺垫做好了，我们终于可以享受到胜利的果实啦！<br>执行如下命令<code>pip install Scrapy</code><br>pip 会另外下载其他依赖的包，这些就不要我们手动安装啦，等待一会，大功告成！</p>
+<h4 id="7-验证安装"><a href="#7-验证安装" class="headerlink" title="7.验证安装"></a>7.验证安装</h4><p>输入 <code>Scrapy</code></p>
 
           
         
@@ -683,11 +688,75 @@
 <p><strong>分类：</strong>预测类对象的分类标号，根据训练数据集和类标号属性，构建模型来分类现有数据，并用来分类新数据。<br>银行需要弄清楚那些贷款申请者是安全的，哪些是有风险的。<br><strong>预测：</strong>建立连续函数值模型，比如预测空缺值，或者预测顾客在某项活动中的花费。<br>银行需要预测贷给某个顾客多少钱是安全的，预测一个连续值函数或有序值，常用方法是回归分析。</p>
 </blockquote>
 <p>典型应用：<code>欺诈检测</code> <code>市场定位</code> <code>医疗诊断</code></p>
-<h2 id="准备分类和预测的数据"><a href="#准备分类和预测的数据" class="headerlink" title="准备分类和预测的数据"></a>准备分类和预测的数据</h2><h3 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h3><ol>
-<li>修正错误值</li>
-<li>弥补缺失值</li>
-<li>处理极端值</li>
+<h2 id="准备分类和预测的数据"><a href="#准备分类和预测的数据" class="headerlink" title="准备分类和预测的数据"></a>准备分类和预测的数据</h2><h3 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h3><p>数据清理通过填写空缺值，平滑噪声数据，识别删除孤立点，并解决不一致来清理数据。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">空缺值</th>
+<th style="text-align:left">噪声数据(数据平滑技术)</th>
+<th style="text-align:left"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">1. 分箱</td>
+<td style="text-align:left">2. 聚类</td>
+<td style="text-align:left">3. 回归</td>
+</tr>
+<tr>
+<td style="text-align:left">- 忽略元组<br>- 人工填写空缺值<br>- 使用固定值<br>- 使用属性平均值<br>- 使用最有可能值</td>
+<td style="text-align:left">- 箱的深度：表示不同的箱里有相同个数的数据<br>- 箱的宽度：每个箱值的取值区间是个常数<br>- 平滑的办法：<br>① 按箱平均值平滑<br>② 按箱中值平滑<br>③ 按箱边界值平滑</td>
+<td style="text-align:left">- 每个簇中的数据用其中心值代替<br>- 忽略孤立点<br>- 先通过聚类等办法找出孤立点。<br>- 人工再审查这些孤立点</td>
+<td style="text-align:left">- 通过构造函数来符合数据变化的趋势，这样可以用一个变量预测另一个变量。<br>① 线性回归<br>② 多线性回归</td>
+</tr>
+</tbody>
+</table>
+<h4 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h4><ol>
+<li>格式标准化</li>
+<li>异常数据清除</li>
+<li>错误纠正</li>
+<li>重复数据清除</li>
 </ol>
+<h4 id="数据变换"><a href="#数据变换" class="headerlink" title="数据变换"></a>数据变换</h4><table>
+<thead>
+<tr>
+<th style="text-align:left">平滑</th>
+<th style="text-align:left">聚集</th>
+<th style="text-align:left">数据概化</th>
+<th style="text-align:left">规范化</th>
+<th style="text-align:left">属性构造</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">数据立方体聚集</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">最小 最大规范化</td>
+<td style="text-align:left">有给定的属性构造和添加新的属性，以帮助提高精度和对高纬度数据结构的理解</td>
+</tr>
+</tbody>
+</table>
+<h4 id="数据归约"><a href="#数据归约" class="headerlink" title="数据归约"></a>数据归约</h4><table>
+<thead>
+<tr>
+<th style="text-align:left">数据聚集</th>
+<th style="text-align:left">维归约</th>
+<th style="text-align:left">数据压缩</th>
+<th style="text-align:left">数值归约</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">- 删除不相关属性<br>属性子集选择</td>
+<td style="text-align:left">- 小波变换<br>- 主要成分分析</td>
+<td style="text-align:left">- 回归和对数线性模型<br>线性回归<br>对数线性模型<br>- 直方图<br>等宽<br>等深<br>V-最优<br>maxDiff</td>
+</tr>
+</tbody>
+</table>
 <h3 id="相关分析"><a href="#相关分析" class="headerlink" title="相关分析"></a>相关分析</h3><ol>
 <li>在分类和回归之前进行，它试图识别与分类和回归过程显著相关的属性。</li>
 <li>属性子集选择通过删除不相关或冗余的属性减少数据量。属性子集选择的目标是找出最小属性集，使得数据类的概率分布尽可能地接近使用所有属性得到的原分布。</li>
@@ -709,12 +778,6 @@
 </tbody>
 </table>
 <p>这些方法的结束条件可以不同。该过程可以使用一个度量阈值来决定何时停止属性选择过程。</p>
-<h3 id="数据变换和归约"><a href="#数据变换和归约" class="headerlink" title="数据变换和归约"></a>数据变换和归约</h3><ol>
-<li>字符型（character）变量转换数值型（numeric）变量；从原始数据中提炼出大量的衍生变量，根据一定的统计原理把数据单位或变量标准化。</li>
-<li>规范化涉及将所给属性的所有值按比例进行缩放，使其落入一个较小的指定区间，例[-1.0,1.0]或者[0.0,1.0]</li>
-<li>数据也可以通过泛化到较高层概念进行变换。例如，属性income的数值可以泛化为离散的区间，如low，medium和high。泛化可以压缩原来的训练数据，使得学习时的输入输出得以减少。</li>
-<li>其他归约的办法如：小波变换，主成分分析，分箱，直方图分析，聚类的离散化技术</li>
-</ol>
 <hr>
 <h2 id="分类办法"><a href="#分类办法" class="headerlink" title="分类办法"></a>分类办法</h2><h3 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h3><ol>
 <li>决策树构建，使用属性选择度量来选择将元组最好的划分为不同的类的属性，递归的通过选定的属性，来划分样本（必须是离散值）</li>
@@ -724,8 +787,7 @@
 </blockquote>
 </li>
 </ol>
-<h3 id="贝叶斯分类"><a href="#贝叶斯分类" class="headerlink" title="贝叶斯分类"></a>贝叶斯分类</h3><hr>
-<h2 id="比较分类办法"><a href="#比较分类办法" class="headerlink" title="比较分类办法"></a>比较分类办法</h2><p>使用下列标准比较分类和预测方法</p>
+<h3 id="贝叶斯分类"><a href="#贝叶斯分类" class="headerlink" title="贝叶斯分类"></a>贝叶斯分类</h3><h2 id="思想：根据某些个先验概率计算Y变量属于某个类别的后验概率"><a href="#思想：根据某些个先验概率计算Y变量属于某个类别的后验概率" class="headerlink" title="思想：根据某些个先验概率计算Y变量属于某个类别的后验概率"></a>思想：根据某些个先验概率计算Y变量属于某个类别的后验概率</h2><h2 id="比较分类办法"><a href="#比较分类办法" class="headerlink" title="比较分类办法"></a>比较分类办法</h2><p>使用下列标准比较分类和预测方法</p>
 <ul>
 <li>分类器的准确率度量（Accuracy）：模型正确预测新数据的类编号的能力</li>
 <li>分类器的灵敏性（Sensitivity）度量和特效性（Specificity）度量<blockquote>
