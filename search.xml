@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Python 语法详解]]></title>
+      <url>%2F2017%2F04%2F10%2FPython-%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3%2F</url>
+      <content type="text"><![CDATA[123456789101112131415161718192021222324# Three ways to create strings'Alpha'"Bravo"str(3)# String methodslen("Charlie")"Delta".upper()"Echo".lower()# 高级输出方法g = "Golf"h = "Hotel"print "%s, %s" % (g, h)# String 变量置换 %string_1 = "Camelot"string_2 = "place"print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)# 时间格式from datetime import datetimenow = datetime.now()print '%s/%s/%s %s:%s:%s' % (now.year, now.month, now.day,now.hour, now.minute, now.second)]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Python学习资源]]></title>
       <url>%2F2017%2F04%2F10%2FPython%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%2F</url>
       <content type="text"><![CDATA[学习资源 笨办法学 Python 中文版 → http://www.kancloud.cn/wizardforcel/lpthw/92438 这本书绝对是最简单的学习 Python 的方法。你会被如此简单的基础学习感到震惊，你会真实地感受到自己的学习进程，一步步的获取新的知识。 Online Python Tutor：Python 初学者的好帮手 Online Python Tutor 是由 Philip Guo 开发的一个免费教育工具，可帮助学生攻克编程学习中的基础障碍，理解每一行源代码在程序执行时在计算机中的过程。 Learn Python Programming @ Codecademy 在这个 Codecademy 的课程中你将会学到如何用文件，如何使用循环。什么是函数以及他们能用来做什么。这些都是很基础的，但是对初学者很 有好的东西。当需要帮助时有一个交流的论坛，但通常所有东西都能被理解. 账号：2953354254@qq.com 用户名：Brucechan 简明 Python 教程 非常像 LPTHW，但是在如何制定你的完美学习计划并实施，以及如何开始第一步上 提供了更深的引导，而不会让你丧失自信心。对于那些想学 Python 的人来说它被认为是 最好的初学者教程之一，当然你要先看看前几章，看看自己是否喜欢它的写作风格. Think Python 中文版 → http://codingpy.com/books/thinkpython2/ Think Python 是一个面向 Python 初学者的一个指南。它从编程的基本概念教起，而且它很 仔细地定义了所有的术语当他们第一次用到时，并且很有逻辑性地展现新的概念。像递归和面向 对象这样大一点的知识块被分成了一系列更小的步骤，穿插于课程几个章节. 网站资源codingpy — 编程派 打造数据科学作品集1：用数据讲故事 打造数据科学作品集2：搭建一个数据科学博客 打造数据科学作品集3：从机器学习项目开始 打造数据科学作品集4：数据科学家如何找到心仪工作？ 博客资源Python 正则表达式操作指南]]></content>
