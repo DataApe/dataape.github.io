@@ -277,14 +277,14 @@ p {
   margin: 0 0 25px 0;
 }
 a {
-  color: #555;
+  color: #0593d3;
   text-decoration: none;
   border-bottom: 1px solid #999;
   word-wrap: break-word;
 }
 a:hover {
-  color: #222;
-  border-bottom-color: #222;
+  color: #0477ab;
+  border-bottom-color: #0477ab;
 }
 blockquote {
   margin: 0;
@@ -475,7 +475,7 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
   color: #4d4d4c;
   background: #f7f7f7;
   line-height: 1.6;
@@ -487,10 +487,10 @@ code {
 code {
   padding: 2px 4px;
   word-wrap: break-word;
-  color: #555;
+  color: #d05;
   background: #eee;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 14px;
 }
 pre code {
   padding: 0;
@@ -1477,11 +1477,11 @@ pre .javascript .function {
   display: block;
   line-height: 25px;
   font-size: 14px;
-  color: #555;
+  color: #0593d3;
   border-bottom: none;
 }
 .post-nav-item a:hover {
-  color: #222;
+  color: #0477ab;
   border-bottom: none;
 }
 .post-nav-item a:active {
@@ -1813,7 +1813,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #014ebb;
+  background: #ed32ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2658,25 +2658,4 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
-}
-.myButton {
-  background-color: #0f94bd;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  display: inline-block;
-  cursor: pointer;
-  color: #fff;
-  font-family: Arial;
-  font-size: 17px;
-  padding: 11px 27px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #2f6627;
-}
-.myButton:hover {
-  background-color: #5cbf2a;
-}
-.myButton:active {
-  position: relative;
-  top: 1px;
 }

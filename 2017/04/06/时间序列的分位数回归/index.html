@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="回归," />
 
 
 
@@ -87,19 +87,19 @@
 
 
 
-<meta name="description" content="本文旨在帮助刚接触 Github 新手，想利用 Github 来创建自己的站点、个人博客等。使用 Hexo + Next 搭建静态博客
-Hexo 安装完之后，主题的初始化格式非常简单。next主题的作者提供了一个非常好的方式，就是 custom 文件，这个文件就是用来让用户在里面添加自己的样式去覆盖主题原有的样式。推荐以下3篇个性化设置文章。">
+<meta name="description" content="复合分位数回归
+估计回归系数的传统方法是最小二乘法，最小二乘法对于误差项的要求是非常严苛的，在实际问题中，数据往往会出现 尖峰厚尾 等特征，或者是存在明显的异方差情况，这时候若使用LS方法对回归系数进行估计，其稳健性是很差的。分位数回归有效的解决了上述问题，符合分位数回归是分位数回归的一种更一般性的推广。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo系列">
-<meta property="og:url" content="http://yoursite.com/2017/03/29/Hexo系列/index.html">
+<meta property="og:title" content="时间序列的分位数回归（待续）">
+<meta property="og:url" content="http://yoursite.com/2017/04/06/时间序列的分位数回归/index.html">
 <meta property="og:site_name" content="数据科学博客">
-<meta property="og:description" content="本文旨在帮助刚接触 Github 新手，想利用 Github 来创建自己的站点、个人博客等。使用 Hexo + Next 搭建静态博客
-Hexo 安装完之后，主题的初始化格式非常简单。next主题的作者提供了一个非常好的方式，就是 custom 文件，这个文件就是用来让用户在里面添加自己的样式去覆盖主题原有的样式。推荐以下3篇个性化设置文章。">
-<meta property="og:updated_time" content="2017-04-06T14:06:39.358Z">
+<meta property="og:description" content="复合分位数回归
+估计回归系数的传统方法是最小二乘法，最小二乘法对于误差项的要求是非常严苛的，在实际问题中，数据往往会出现 尖峰厚尾 等特征，或者是存在明显的异方差情况，这时候若使用LS方法对回归系数进行估计，其稳健性是很差的。分位数回归有效的解决了上述问题，符合分位数回归是分位数回归的一种更一般性的推广。">
+<meta property="og:updated_time" content="2017-04-06T14:17:25.858Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo系列">
-<meta name="twitter:description" content="本文旨在帮助刚接触 Github 新手，想利用 Github 来创建自己的站点、个人博客等。使用 Hexo + Next 搭建静态博客
-Hexo 安装完之后，主题的初始化格式非常简单。next主题的作者提供了一个非常好的方式，就是 custom 文件，这个文件就是用来让用户在里面添加自己的样式去覆盖主题原有的样式。推荐以下3篇个性化设置文章。">
+<meta name="twitter:title" content="时间序列的分位数回归（待续）">
+<meta name="twitter:description" content="复合分位数回归
+估计回归系数的传统方法是最小二乘法，最小二乘法对于误差项的要求是非常严苛的，在实际问题中，数据往往会出现 尖峰厚尾 等特征，或者是存在明显的异方差情况，这时候若使用LS方法对回归系数进行估计，其稳健性是很差的。分位数回归有效的解决了上述问题，符合分位数回归是分位数回归的一种更一般性的推广。">
 
 
 
@@ -127,13 +127,13 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/29/Hexo系列/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/06/时间序列的分位数回归/"/>
 
 
 
 
 
-  <title> Hexo系列 | 数据科学博客 </title>
+  <title> 时间序列的分位数回归（待续） | 数据科学博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -296,7 +296,7 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/29/Hexo系列/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/06/时间序列的分位数回归/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -317,7 +317,7 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
             
             
               
-                Hexo系列
+                时间序列的分位数回归（待续）
               
             
           </h1>
@@ -332,8 +332,8 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-29T18:00:46+08:00">
-                2017-03-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-06T20:39:36+08:00">
+                2017-04-06
               </time>
             
 
@@ -355,8 +355,8 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/软件工具/" itemprop="url" rel="index">
-                    <span itemprop="name">软件工具</span>
+                  <a href="/categories/统计/" itemprop="url" rel="index">
+                    <span itemprop="name">统计</span>
                   </a>
                 </span>
 
@@ -373,8 +373,8 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/03/29/Hexo系列/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/29/Hexo系列/" itemprop="commentCount"></span>
+                <a href="/2017/04/06/时间序列的分位数回归/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/06/时间序列的分位数回归/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -382,7 +382,7 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
 
           
           
-             <span id="/2017/03/29/Hexo系列/" class="leancloud_visitors" data-flag-title="Hexo系列">
+             <span id="/2017/04/06/时间序列的分位数回归/" class="leancloud_visitors" data-flag-title="时间序列的分位数回归（待续）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -411,10 +411,11 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
       
 
       
-        <p>本文旨在帮助刚接触 Github 新手，想利用 Github 来创建自己的站点、个人博客等。<br><a href="https://segmentfault.com/a/1190000004076989" target="_blank" rel="external">使用 Hexo + Next 搭建静态博客</a></p>
-<p>Hexo 安装完之后，主题的初始化格式非常简单。<code>next</code>主题的作者提供了一个非常好的方式，就是 <code>custom</code> 文件，这个文件就是用来让用户在里面添加自己的样式去覆盖主题原有的样式。推荐以下3篇个性化设置文章。</p>
-<a id="more"></a>
-<p><a href="https://segmentfault.com/a/1190000008618841" target="_blank" rel="external">Hexo搭建博客的个性化设置一</a><br><a href="https://segmentfault.com/a/1190000008647131" target="_blank" rel="external">Hexo搭建博客的个性化设置二</a><br><a href="https://segmentfault.com/a/1190000008777399" target="_blank" rel="external">Hexo搭建博客的个性化设置三</a><br><a href="http://lovenight.github.io/2015/11/10/Hexo-3-1-1-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/" target="_blank" rel="external">Hexo 3.1.1 静态博客搭建指南</a></p>
+        <p>复合分位数回归</p>
+<p>估计回归系数的传统方法是最小二乘法，最小二乘法对于误差项的要求是非常严苛的，在实际问题中，数据往往会出现 尖峰厚尾 等特征，或者是存在明显的异方差情况，这时候若使用LS方法对回归系数进行估计，其稳健性是很差的。分位数回归有效的解决了上述问题，符合分位数回归是分位数回归的一种更一般性的推广。<br><a id="more"></a><br>【尖峰厚尾】</p>
+<blockquote>
+<p>金融数据的尖峰厚尾特征是相比较标准正态分布来说的，标准正态分布的偏度为0，峰度为3，通常做实证分析时，会假设金融数据为正态分布，这样方便建模分析，但是实证表明，很多数据并不符合正态分布，而更像尖峰厚尾，就是峰度比3大，两边的尾巴比正态分布厚，没有下降得这么快。厚尾分布主要是出现在金融数据中，例如证券的收益率。 从图形上说，较正态分布图的尾部要厚，峰处要尖。直观些说，就是这些数据出现极端值的概率要比正态分布数据出现极端值的概率大。因此，不能简单的用正态分布去拟合这些数据的分布，从而做一些统计推断。一般来说，通过实证分析发现，自由度为5或6的t分布拟合的较好。 </p>
+</blockquote>
 
       
     </div>
@@ -454,7 +455,7 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/回归/" rel="tag"># 回归</a>
           
         </div>
       
@@ -467,8 +468,8 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/10/Python爬虫之Scrapy框架安装配置/" rel="next" title="Python爬虫：Scrapy框架安装配置">
-                <i class="fa fa-chevron-left"></i> Python爬虫：Scrapy框架安装配置
+              <a href="/2017/03/30/数据科学1.2 数据结构/" rel="next" title="数据科学1.2 数据结构（待续）">
+                <i class="fa fa-chevron-left"></i> 数据科学1.2 数据结构（待续）
               </a>
             
           </div>
@@ -477,8 +478,8 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/30/数据科学1.2 数据结构/" rel="prev" title="数据科学1.2 数据结构（待续）">
-                数据科学1.2 数据结构（待续） <i class="fa fa-chevron-right"></i>
+              <a href="/2017/04/06/ggplot2的图形语法/" rel="prev" title="ggplot2的图形语法（待续）">
+                ggplot2的图形语法（待续） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -505,8 +506,8 @@ Hexo 安装完之后，主题的初始化格式非常简单。next主题的作�
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/03/29/Hexo系列/"
-           data-title="Hexo系列" data-url="http://yoursite.com/2017/03/29/Hexo系列/">
+      <div class="ds-thread" data-thread-key="2017/04/06/时间序列的分位数回归/"
+           data-title="时间序列的分位数回归（待续）" data-url="http://yoursite.com/2017/04/06/时间序列的分位数回归/">
       </div>
     
   </div>
