@@ -87,22 +87,31 @@
 
 
 
-<meta name="description" content="文章转载 → Python初级教程 , 文章篇幅太长，下文做了精简。
-
-本文是针对Python的初学者，从无到有的介绍Python语言如何入门，主要包括了：Python的简介，如何下载Python，如何安装Python，如何使用终端、Shell，IDE等各种开发环境进行Python开发，Python中的语法和基本知识、概念和逻辑，以及继续深入学习Python的方法，另外还整理一些值得参考的资料。">
+<meta name="description" content="本篇文章中Python的安装是基于window平台，安装Scrapy之前确保已经安装好下列程序:
+安装Python
+安装过程见→ python初级教程：入门详解
+在命令行中输入 python –version，如果没有提示错误，则安装成功。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python安装">
-<meta property="og:url" content="http://yoursite.com/2017/03/09/Python安装/index.html">
+<meta property="og:title" content="Python爬虫：Scrapy框架安装配置">
+<meta property="og:url" content="http://yoursite.com/2017/03/10/Python-爬虫之Scrapy框架安装配置/index.html">
 <meta property="og:site_name" content="数据科学博客">
-<meta property="og:description" content="文章转载 → Python初级教程 , 文章篇幅太长，下文做了精简。
-
-本文是针对Python的初学者，从无到有的介绍Python语言如何入门，主要包括了：Python的简介，如何下载Python，如何安装Python，如何使用终端、Shell，IDE等各种开发环境进行Python开发，Python中的语法和基本知识、概念和逻辑，以及继续深入学习Python的方法，另外还整理一些值得参考的资料。">
-<meta property="og:updated_time" content="2017-04-10T08:05:34.605Z">
+<meta property="og:description" content="本篇文章中Python的安装是基于window平台，安装Scrapy之前确保已经安装好下列程序:
+安装Python
+安装过程见→ python初级教程：入门详解
+在命令行中输入 python –version，如果没有提示错误，则安装成功。">
+<meta property="og:image" content="http://yoursite.com/images/register.png">
+<meta property="og:image" content="http://yoursite.com/images/pyopenssl.png">
+<meta property="og:image" content="http://yoursite.com/images/lxml.png">
+<meta property="og:image" content="http://yoursite.com/images/lxmlinstall.png">
+<meta property="og:image" content="http://yoursite.com/images/ssl.png">
+<meta property="og:updated_time" content="2017-04-06T14:11:24.219Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python安装">
-<meta name="twitter:description" content="文章转载 → Python初级教程 , 文章篇幅太长，下文做了精简。
-
-本文是针对Python的初学者，从无到有的介绍Python语言如何入门，主要包括了：Python的简介，如何下载Python，如何安装Python，如何使用终端、Shell，IDE等各种开发环境进行Python开发，Python中的语法和基本知识、概念和逻辑，以及继续深入学习Python的方法，另外还整理一些值得参考的资料。">
+<meta name="twitter:title" content="Python爬虫：Scrapy框架安装配置">
+<meta name="twitter:description" content="本篇文章中Python的安装是基于window平台，安装Scrapy之前确保已经安装好下列程序:
+安装Python
+安装过程见→ python初级教程：入门详解
+在命令行中输入 python –version，如果没有提示错误，则安装成功。">
+<meta name="twitter:image" content="http://yoursite.com/images/register.png">
 
 
 
@@ -130,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/09/Python安装/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/10/Python-爬虫之Scrapy框架安装配置/"/>
 
 
 
 
 
-  <title> Python安装 | 数据科学博客 </title>
+  <title> Python爬虫：Scrapy框架安装配置 | 数据科学博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -299,12 +308,12 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/09/Python安装/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/10/Python-爬虫之Scrapy框架安装配置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="image" content="/images/wukong.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -320,7 +329,7 @@
             
             
               
-                Python安装
+                Python爬虫：Scrapy框架安装配置
               
             
           </h1>
@@ -335,8 +344,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-09T21:23:04+08:00">
-                2017-03-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-10T16:38:39+08:00">
+                2017-03-10
               </time>
             
 
@@ -376,8 +385,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/03/09/Python安装/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/09/Python安装/" itemprop="commentCount"></span>
+                <a href="/2017/03/10/Python-爬虫之Scrapy框架安装配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/10/Python-爬虫之Scrapy框架安装配置/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -385,7 +394,7 @@
 
           
           
-             <span id="/2017/03/09/Python安装/" class="leancloud_visitors" data-flag-title="Python安装">
+             <span id="/2017/03/10/Python-爬虫之Scrapy框架安装配置/" class="leancloud_visitors" data-flag-title="Python爬虫：Scrapy框架安装配置">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -414,37 +423,64 @@
       
 
       
-        <p>文章转载 → <a href="http://www.crifan.com/files/doc/docbook/python_beginner_tutorial/release/html/python_beginner_tutorial.html#run_your_python_file_in_cmdd" target="_blank" rel="external">Python初级教程</a> , 文章篇幅太长，下文做了精简。</p>
-<blockquote>
-<p>本文是针对Python的初学者，从无到有的介绍Python语言如何入门，主要包括了：Python的简介，如何下载Python，如何安装Python，如何使用终端、Shell，IDE等各种开发环境进行Python开发，Python中的语法和基本知识、概念和逻辑，以及继续深入学习Python的方法，另外还整理一些值得参考的资料。</p>
-</blockquote>
-<a id="more"></a>
-<h2 id="安装Python"><a href="#安装Python" class="headerlink" title="安装Python"></a>安装Python</h2><p><strong>1. Python官网不是太稳定，对于国内开发者来说，时不时会出现无法访问的情况。可以选择国内的镜像进行下载。</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">官网上的下载地址</th>
-<th style="text-align:left">国内的镜像</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href="http://www.python.org/ftp/python/" target="_blank" rel="external">http://www.python.org/ftp/python/</a><br><a href="http://python.org/getit/releases/" target="_blank" rel="external">http://python.org/getit/releases/</a></td>
-<td style="text-align:left"><a href="http://mirrors.sohu.com/python/" target="_blank" rel="external">http://mirrors.sohu.com/python/</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>2. Python有2.x版本和3.x版本的区别。对于初学者，推荐先用Python 2.x版本的。</strong></p>
-<ul>
-<li><a href="http://www.crifan.comsummary_the_difference_between_python2_and_python3" target="_blank" rel="external">总结Python2(Python 2.x版本）和Python3（Python 3.x版本）之间的区别</a></li>
-<li><a href="http://www.crifan.com/tutorial_how_to_install_python_on_windows" target="_blank" rel="external">如何在Windows系统中安装Python</a></li>
+        <p>本篇文章中Python的安装是基于window平台，安装Scrapy之前确保已经安装好下列程序:</p>
+<h4 id="安装Python"><a href="#安装Python" class="headerlink" title="安装Python"></a>安装Python</h4><ul>
+<li>安装过程见→ <a href="http://dataape.github.io/2017/03/09/python%E5%88%9D%E7%BA%A7%E6%95%99%E7%A8%8B%EF%BC%9A%E5%85%A5%E9%97%A8%E8%AF%A6%E8%A7%A3/" target="_blank" rel="external">python初级教程：入门详解</a></li>
+<li>在命令行中输入 <code>python –version</code>，如果没有提示错误，则安装成功。<a id="more"></a>
+</li>
 </ul>
-<h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><blockquote>
-<p>针对初学者，建议使用windows的cmd下，去运行python脚本。目的很明确：很多东西的学习，其本质上，都是需要一个循序渐进的过程的，学习Python语言同样如此。在没有学会走路，即如何搞懂Windows的cmd下运行Python脚本，就想学会跑了，即直接利用Python的IDE，包括shell和第三方开发环境，结果就是，很多东西，还是不明白到底是为什么，理解的不透彻。而当Python的基本知识，基本开发流程熟悉了之后，再建议你去使用第三方的Python的IDE。</p>
+<h4 id="安装pywin32"><a href="#安装pywin32" class="headerlink" title="安装pywin32"></a>安装pywin32</h4><ul>
+<li>在windows下，必须安装pywin32，安装地址：<br>  <a href="http://sourceforge.net/projects/pywin32/" target="_blank" rel="external">http://sourceforge.net/projects/pywin32/</a><br>  <a href="http://www.softpedia.com/get/Programming/Other-Programming-Files/PyWin32.shtml#download" target="_blank" rel="external">http://www.softpedia.com/get/Programming/Other-Programming-Files/PyWin32.shtml#download</a></li>
+<li>下载直接双击安装，安装完毕之后在python命令行下输入<code>import win32com</code>,如果没有提示错误，则证明安装成功!</li>
+</ul>
+<h4 id="安装pip"><a href="#安装pip" class="headerlink" title="安装pip"></a>安装pip</h4><ul>
+<li>pip是用来安装其他必要包的工具，首先下载<a href="https://bootstrap.pypa.io/get-pip.py" target="_blank" rel="external"><code>get-pip.py</code></a></li>
+<li>下载好之后，选中该文件夹所在路径，执行命令<code>python get-pip.py</code></li>
+<li>执行命令后便会安装好pip，同时，它帮你安装了<code>setuptools</code></li>
+<li>安装完了之后在命令行执行<code>pip --version</code></li>
+<li>安装完后若提醒版本低，可进行更新<code>python -m pip install --update pip</code></li>
+<li>pip is already installed if you’re using Python 2 &gt;=2.7.9 or Python 3 &gt;=3.4 </li>
+</ul>
+<h4 id="安装pyOPENSSL"><a href="#安装pyOPENSSL" class="headerlink" title="安装pyOPENSSL"></a>安装pyOPENSSL</h4><ul>
+<li>在Windows下，是没有预装pyOPENSSL的，而在Linux下是已经安装好的。</li>
+<li>安装地址：<a href="https://launchpad.net/pyopenssl" target="_blank" rel="external">https://launchpad.net/pyopenssl</a> (下载<code>pyOpenSSL-0.11.winxp32-py2.7</code>)</li>
+<li>如果出现了Python Version 2.7 required which was not found in the registry错误！</li>
+<li>解决方法：新建一个register.py 文件，把以下代码贴进去，保存</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># script to register Python 2.0 or later for use with win32all</span></div><div class="line"><span class="comment"># and other extensions that require Python registry settings</span></div><div class="line"><span class="comment">#</span></div><div class="line"><span class="comment"># written by Joakim Loew for Secret Labs AB / PythonWare</span></div><div class="line"><span class="comment">#</span></div><div class="line"><span class="comment"># source:</span></div><div class="line"><span class="comment"># http://www.pythonware.com/products/works/articles/regpy20.htm</span></div><div class="line"><span class="comment">#</span></div><div class="line"> </div><div class="line"><span class="keyword">import</span> sys</div><div class="line"> </div><div class="line"><span class="keyword">from</span> _winreg <span class="keyword">import</span> *</div><div class="line"> </div><div class="line"><span class="comment"># tweak as necessary</span></div><div class="line">version = sys.version[:<span class="number">3</span>]</div><div class="line">installpath = sys.prefix</div><div class="line"> </div><div class="line">regpath = <span class="string">"SOFTWARE\\Python\\Pythoncore\\%s\\"</span> % (version)</div><div class="line">installkey = <span class="string">"InstallPath"</span></div><div class="line">pythonkey = <span class="string">"PythonPath"</span></div><div class="line">pythonpath = <span class="string">"%s;%s\\Lib\\;%s\\DLLs\\"</span> % (</div><div class="line">    installpath, installpath, installpath</div><div class="line">)</div><div class="line"> </div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">RegisterPy</span><span class="params">()</span>:</span></div><div class="line">    <span class="keyword">try</span>:</div><div class="line">        reg = OpenKey(HKEY_CURRENT_USER, regpath)</div><div class="line">    <span class="keyword">except</span> EnvironmentError <span class="keyword">as</span> e:</div><div class="line">        <span class="keyword">try</span>:</div><div class="line">            reg = CreateKey(HKEY_CURRENT_USER, regpath)</div><div class="line">            SetValue(reg, installkey, REG_SZ, installpath)</div><div class="line">            SetValue(reg, pythonkey, REG_SZ, pythonpath)</div><div class="line">            CloseKey(reg)</div><div class="line">        <span class="keyword">except</span>:</div><div class="line">            <span class="keyword">print</span> <span class="string">"*** Unable to register!"</span></div><div class="line">            <span class="keyword">return</span></div><div class="line">        <span class="keyword">print</span> <span class="string">"--- Python"</span>, version, <span class="string">"is now registered!"</span></div><div class="line">        <span class="keyword">return</span></div><div class="line">    <span class="keyword">if</span> (QueryValue(reg, installkey) == installpath <span class="keyword">and</span></div><div class="line">        QueryValue(reg, pythonkey) == pythonpath):</div><div class="line">        CloseKey(reg)</div><div class="line">        <span class="keyword">print</span> <span class="string">"=== Python"</span>, version, <span class="string">"is already registered!"</span></div><div class="line">        <span class="keyword">return</span></div><div class="line">    CloseKey(reg)</div><div class="line">    <span class="keyword">print</span> <span class="string">"*** Unable to register!"</span></div><div class="line">    <span class="keyword">print</span> <span class="string">"*** You probably have another Python installation!"</span></div><div class="line"> </div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</div><div class="line">    RegisterPy()</div></pre></td></tr></table></figure>
+<ul>
+<li><p>在cmd 中运行python脚本<br><img src="/images/register.png" alt="register"></p>
+</li>
+<li><p>双击安装 <code>pyOpenSSL-0.11.winxp32-py2.7</code><br><img src="/images/pyopenssl.png" alt="register"></p>
+</li>
+</ul>
+<h4 id="安装-lxml"><a href="#安装-lxml" class="headerlink" title="安装 lxml"></a>安装 lxml</h4><h5 id="第一种办法："><a href="#第一种办法：" class="headerlink" title="第一种办法："></a>第一种办法：</h5><ul>
+<li>lxml的详细介绍 <a href="http://lxml.de/" target="_blank" rel="external">link</a> ，是一种使用 Python 编写的库，可以迅速、灵活地处理 XML</li>
+<li>直接执行如下命令<code>pip install lxml</code>就可完成安装</li>
+<li>如果提示 Microsoft Visual C++库没安装，则 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=44266" target="_blank" rel="external">link</a> 下载支持的库。</li>
+<li>可能报错：<br><img src="/images/lxml.png" alt="lxml"></li>
+</ul>
+<h5 id="第二种办法："><a href="#第二种办法：" class="headerlink" title="第二种办法："></a>第二种办法：</h5><p>步骤1：安装wheel，cmd命令行运行：<code>pip install wheel</code><br>步骤2：在这里<a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml下载对应的.whl文件" target="_blank" rel="external">http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml下载对应的.whl文件</a><br><code>Ctrl + F</code>，输入<code>lxml</code>，找到下面这段，cp后面是Python的版本号，27表示2.7。</p>
+<blockquote>
+<p>lxml‑3.6.4‑cp27‑cp27m‑win32.whl<br>lxml‑3.6.4‑cp27‑cp27m‑win_amd64.whl<br>lxml‑3.6.4‑cp34‑cp34m‑win32.whl<br>lxml‑3.6.4‑cp34‑cp34m‑win_amd64.whl<br>lxml‑3.6.4‑cp35‑cp35m‑win32.whl<br>lxml‑3.6.4‑cp35‑cp35m‑win_amd64.whl<br>lxml‑3.6.4‑cp36‑cp36m‑win32.whl<br>lxml‑3.6.4‑cp36‑cp36m‑win_amd64.whl</p>
 </blockquote>
-<p>先：<a href="http://www.crifan.com/files/doc/docbook/soft_dev_basic/release/html/soft_dev_basic.html#win_cmd" target="_blank" rel="external">Windows的cmd</a> + <a href="http://www.crifan.com/files/doc/docbook/rec_soft_npp/release/html/rec_soft_npp.html" target="_blank" rel="external">Notepad++</a><br>再：选用某个<a href="http://www.crifan.com/summary_common_python_ide_pyscripter_ulipad_eclipse_pydev_eric/" target="_blank" rel="external">IDE</a>，比如<a href="http://www.crifan.com/try_with_python_ide_pyscripter/" target="_blank" rel="external">PyScripter</a>，<a href="http://www.crifan.com/try_with_python_ide_ulipad/" target="_blank" rel="external">Ulipad</a>，<a href="http://www.crifan.com/try_with_python_ide_eclipse_pydev/" target="_blank" rel="external">Eclipse+PyDev</a>等。 </p>
-<h2 id="使用问题"><a href="#使用问题" class="headerlink" title="使用问题"></a>使用问题</h2><p><a href="http://www.crifan.com/files/doc/docbook/python_beginner_tutorial/release/html/python_beginner_tutorial.html#qa.run_py_but_notepad_open" target="_blank" rel="external">在window的cmd中运行python结果却调用了文本编辑器去打开了，而不是去调用Python解析器去运行python文件</a></p>
-<p>解决办法：修改后缀为.py文件的打开方式，设置为python</p>
+<p>步骤3：进入.whl所在的文件夹，执行命令<code>pip install 带后缀的完整文件名</code>即可完成安装<br>pip安装报错：is not a supported wheel on this platform<br><img src="/images/lxmlinstall.png" alt="lxml_install"><br>解决方法：在shell中输入import pip; print(pip.pep425tags.get_supported())可以获取到pip支持的文件名还有版本<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> pip; print(pip.pep425tags.get_supported())</div><div class="line">[(<span class="string">'cp27'</span>, <span class="string">'none'</span>, <span class="string">'win_amd64'</span>), (<span class="string">'cp27'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'cp2'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), </div><div class="line">(<span class="string">'cp26'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'cp25'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'cp24'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), </div><div class="line">(<span class="string">'cp23'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'cp22'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'cp21'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), </div><div class="line">(<span class="string">'cp20'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'py27'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'py2'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), </div><div class="line">(<span class="string">'py26'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'py25'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'py24'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), </div><div class="line">(<span class="string">'py23'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'py22'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), (<span class="string">'py21'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>), </div><div class="line">(<span class="string">'py20'</span>, <span class="string">'none'</span>, <span class="string">'any'</span>)]</div></pre></td></tr></table></figure></p>
+<p>可以发现上面下载的文件名格式是不支持的，修改为：<code>lxml-3.7.3-cp27-none-win_amd64.whl</code>即可成功安装。</p>
+<h4 id="安装Scrapy"><a href="#安装Scrapy" class="headerlink" title="安装Scrapy"></a>安装Scrapy</h4><ul>
+<li>最后就是激动人心的时刻啦，上面的铺垫做好了，我们终于可以享受到胜利的果实啦！</li>
+<li>执行如下命令<code>pip install Scrapy</code></li>
+<li>pip 会另外下载其他依赖的包，这些就不要我们手动安装啦，等待一会，大功告成！</li>
+<li>验证安装，输入 <code>Scrapy</code></li>
+</ul>
+<h4 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h4><ul>
+<li><code>scrapy startproject phone</code></li>
+<li>发生问题：<br><img src="/images/ssl.png" alt="ssl"></li>
+<li>问题原因：twist版本问题，twist版本高于需要的</li>
+<li>输入<code>pip freeze</code>查看twist版本，用<code>pip install twisted==13.1.0</code> 替代更高的版本</li>
+</ul>
+<h4 id="Scrapy入门教程"><a href="#Scrapy入门教程" class="headerlink" title="Scrapy入门教程"></a>Scrapy入门教程</h4><ul>
+<li><a href="http://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html" target="_blank" rel="external">Scrapy 1.0 中文文档</a> — 这是一本步骤详细的说明书。</li>
+</ul>
 
       
     </div>
@@ -497,8 +533,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/03/分类和预测/" rel="next" title="分类和预测">
-                <i class="fa fa-chevron-left"></i> 分类和预测
+              <a href="/2017/03/09/Python-安装/" rel="next" title="Python安装">
+                <i class="fa fa-chevron-left"></i> Python安装
               </a>
             
           </div>
@@ -507,8 +543,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/10/Python爬虫之Scrapy框架安装配置/" rel="prev" title="Python爬虫：Scrapy框架安装配置">
-                Python爬虫：Scrapy框架安装配置 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/03/29/Hexo系列/" rel="prev" title="Hexo系列">
+                Hexo系列 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -535,8 +571,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/03/09/Python安装/"
-           data-title="Python安装" data-url="http://yoursite.com/2017/03/09/Python安装/">
+      <div class="ds-thread" data-thread-key="2017/03/10/Python-爬虫之Scrapy框架安装配置/"
+           data-title="Python爬虫：Scrapy框架安装配置" data-url="http://yoursite.com/2017/03/10/Python-爬虫之Scrapy框架安装配置/">
       </div>
     
   </div>
@@ -573,7 +609,7 @@
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
+               src="/images/wukong.png"
                alt="" />
           <p class="site-author-name" itemprop="name"></p>
            
@@ -638,7 +674,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Python"><span class="nav-number">1.</span> <span class="nav-text">安装Python</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发环境"><span class="nav-number">2.</span> <span class="nav-text">开发环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用问题"><span class="nav-number">3.</span> <span class="nav-text">使用问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Python"><span class="nav-number">1.</span> <span class="nav-text">安装Python</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装pywin32"><span class="nav-number">2.</span> <span class="nav-text">安装pywin32</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装pip"><span class="nav-number">3.</span> <span class="nav-text">安装pip</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装pyOPENSSL"><span class="nav-number">4.</span> <span class="nav-text">安装pyOPENSSL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-lxml"><span class="nav-number">5.</span> <span class="nav-text">安装 lxml</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#第一种办法："><span class="nav-number">5.1.</span> <span class="nav-text">第一种办法：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第二种办法："><span class="nav-number">5.2.</span> <span class="nav-text">第二种办法：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Scrapy"><span class="nav-number">6.</span> <span class="nav-text">安装Scrapy</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建项目"><span class="nav-number">7.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Scrapy入门教程"><span class="nav-number">8.</span> <span class="nav-text">Scrapy入门教程</span></a></li></ol></div>
             
 
           </div>
