@@ -98,7 +98,8 @@
 语法教程
 笨办法学 Python 中文版教程 → http://www.kancloud.cn/wizardforcel/lpthw/92438 这本书绝对是最简单的学习 Python 的方法。你会真实地感受到自己的学习进程，一步步的获取">
 <meta property="og:image" content="http://yoursite.com/images/learn_python/deep_learning.png">
-<meta property="og:updated_time" content="2017-05-11T10:03:49.830Z">
+<meta property="og:image" content="http://yoursite.com/images/learn_python/seaborn.png">
+<meta property="og:updated_time" content="2017-05-27T09:17:31.138Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python 学习集汇总">
 <meta name="twitter:description" content="安装教程如何安装Python? → http://dataape.github.io/2017/03/09/Python-%E5%AE%89%E8%A3%85/
@@ -348,6 +349,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/软件工具/" itemprop="url" rel="index">
+                    <span itemprop="name">软件工具</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -420,23 +443,28 @@
 </li>
 </ol>
 <hr>
-<h2 id="扩展包"><a href="#扩展包" class="headerlink" title="扩展包"></a>扩展包</h2><ol>
-<li><a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml" target="_blank" rel="external"><em>Unofficial Windows Binaries for Python Extension Packages</em></a> // 非官方的Python扩展包(Windows二进制文件)</li>
+<h2 id="核心库"><a href="#核心库" class="headerlink" title="核心库"></a>核心库</h2><ol>
+<li><a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml" target="_blank" rel="external"><em>Unofficial Windows Binaries for Python Extension Packages</em></a> // 非官方的Python扩展包(Windows二进制文件)，<a href="[http://pythonwheels.com/]"><em>whl格式</em></a></li>
 <li><a href="http://scikit-learn.org/stable/" target="_blank" rel="external"><em>scikit-learn</em></a> // 建立在NumPy、SciPy matplotlib上，数据挖掘和分析工具，多种回归，分类，聚类，向量机，朴素贝叶斯</li>
 <li><a href="http://www.clips.ua.ac.be/pages/pattern" target="_blank" rel="external"><em>mlpy</em></a> // a high-performance Python library for predictive modeling</li>
 <li><a href="http://www.statsmodels.org/stable/index.html" target="_blank" rel="external"><em>Statsmodels</em></a> // 统计建模和计量经济学工具包，包括一些描述统计、统计模型估计和推断。</li>
 <li><a href="http://scrapy-chs.readthedocs.io/zh_CN/1.0/index.html" target="_blank" rel="external"><em>Scrapy</em></a> // 爬虫教程</li>
 <li><a href="http://www.nltk.org/" target="_blank" rel="external"><em>NLTK</em></a> // 自然语言工具箱（Natural Language Toolkit），是当前最为流行的自然语言编程与开发工具。</li>
-<li><a href="http://mlpy.sourceforge.net/" target="_blank" rel="external"><em>Pattern</em></a> // Python的挖掘模块，拥有以下工具：<ul>
-<li>数据挖掘：包括网络服务（Google，Twitter，Wikipedia），网络蜘蛛，HTML DOM解析</li>
-<li>自然语言处理 / 机器学习 / 网络分析</li>
-</ul>
+<li><a href="http://mlpy.sourceforge.net/" target="_blank" rel="external"><em>Pattern</em></a> // Python的挖掘模块，拥有以下工具：<blockquote>
+<p>数据挖掘：包括网络服务（Google，Twitter，Wikipedia），网络蜘蛛，HTML DOM解析<br>自然语言处理 / 机器学习 / 网络分析</p>
+</blockquote>
 </li>
 <li><p><a href="http://deeplearning.net/software/theano/tutorial/" target="_blank" rel="external"><em>Theano</em></a> // 深度学习的<a href="https://zhuanlan.zhihu.com/p/25285133" target="_blank" rel="external">工具对比</a><br> <img src="/images/learn_python/deep_learning.png" alt=""></p>
 </li>
 <li><p><a href="https://www.scipy.org/" target="_blank" rel="external"><em>SciPy.org</em></a> // SciPy是一个开源的Python算法库和数学工具包。包括了以下这些核心包:</p>
 </li>
 </ol>
+<style>
+table th:first-of-type {
+    width: 100px;
+}
+</style>
+
 <blockquote>
 <table>
 <thead>
@@ -459,7 +487,7 @@
 </tr>
 <tr>
 <td><a href="http://matplotlib.org/" target="_blank" rel="external">Matplotlib</a></td>
-<td>Comprehensive 2D Plotting</td>
+<td><a href="http://python.jobbole.com/85106/" target="_blank" rel="external">matplotlib 绘图可视化知识点</a><br> <a href="https://liam0205.me/2014/09/11/matplotlib-tutorial-zh-cn/" target="_blank" rel="external">Matplotlib 教程</a></td>
 <td>绘图库，提供了一整套和matlab相似的命令API，十分适合交互式地进行制图</td>
 </tr>
 <tr>
@@ -480,6 +508,51 @@
 </tbody>
 </table>
 </blockquote>
+<p>可视化库除了matplotlib，还有 <a href="http://python.jobbole.com/85647/" target="_blank" rel="external">seaborn</a> 等等。<br><img src="/images/learn_python/seaborn.png" alt=""></p>
+<hr>
+<h2 id="安装库"><a href="#安装库" class="headerlink" title="安装库"></a>安装库</h2><h3 id="源码安装"><a href="#源码安装" class="headerlink" title="源码安装"></a>源码安装</h3><p>很多第三方库都是开源的，几乎都可以在github 或者 pypi上找到源码。找到源码格式大概都是 zip\tar.zip\tar.bz2格式的压缩包。解压这些包，进入解压好的文件夹，通常会看见一个 <code>setup.py</code> 的文件。打开命令行，进入该文件夹。运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python setup.py install</div></pre></td></tr></table></figure></p>
+<p>这个命令，就能把这个第三库安装到系统里，也就是你的 Python 路径，windows大概是在 C:\Python2.7\Lib\site-packages。</p>
+<h3 id="包管理器（pip-和-easy-install）"><a href="#包管理器（pip-和-easy-install）" class="headerlink" title="包管理器（pip 和 easy_install）"></a>包管理器（pip 和 easy_install）</h3><p>现在很多编程语言，都带有包管理器，例如 Ruby 的 gem，nodejs的npm。Python当然也不例外，拥有大名鼎鼎的 pip和 easy_install。pypi就是一些 python第三库所在的源，使用 pip 或者 easy_install 安装模块，会搜索这个源，然后自动下载安装。</p>
+<h4 id="1-先安装-pip："><a href="#1-先安装-pip：" class="headerlink" title="1. 先安装 pip："></a>1. 先安装 pip：</h4><p>下载地址：pip：<a href="http://pypi.python.org/pypi/pip#downloads" target="_blank" rel="external">http://pypi.python.org/pypi/pip#downloads</a><br>下载pip-8.1.2.tar.gz(md5,pgp)完成之后，解压到一个文件夹，<a href="[http://jingyan.baidu.com/article/5552ef473e2df6518ffbc916.html]">cmd控制台进入解压目录</a>，输入：<code>python setup.py install</code><br>安装好pip之后，将D:\Python27\Scripts <a href="[http://jingyan.baidu.com/article/03b2f78c0473e55ea237aeca.html]">添加至环境变量</a>。（一般你windows装python2.7的时候，会自动给你安装pip，只需要将D:\Python27\Scripts 添加至环境变量）</p>
+<h4 id="2-安装-wheel"><a href="#2-安装-wheel" class="headerlink" title="2. 安装 wheel:"></a>2. 安装 <a href="[http://pythonwheels.com/]">wheel</a>:</h4><p>Wheels are the new standard of python distribution and are intended to replace eggs.<br>cmd输入：<code>pip install wheel</code></p>
+<h4 id="3-库的安装方法"><a href="#3-库的安装方法" class="headerlink" title="3. 库的安装方法"></a>3. 库的安装方法</h4><style>
+table th:first-of-type {
+    width: 180px;
+}
+</style>
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>安装 flask 框架</td>
+<td>pip install flask 或者 easy_install flaskv</td>
+</tr>
+<tr>
+<td>卸载flask</td>
+<td>pip uninstall flask</td>
+</tr>
+<tr>
+<td>查看所安装的包</td>
+<td>pip list</td>
+</tr>
+<tr>
+<td>搜索包</td>
+<td>pip search flask</td>
+</tr>
+<tr>
+<td>重定向输出项目使用的库</td>
+<td>pip freeze &gt; requirements.txt 这样就会把该环境下的第三方库重定向到 requirements.txt文件内 <br>如果给别人安装项目的依赖，只需要运行：<br>pip install -r requirements.txt</td>
+</tr>
+</tbody>
+</table>
+<p>有时候网络速度很慢，pip是在线安装的，可不可以离线呢？当然可以啦，<code>pip install 的第一步，就是在 pypi 上寻找包，然后下载到本地</code>。如果网络不好，可以先建一个本地的仓库，把常用的包离线下载。比如可以下载 flask 的源码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip intall flask-master.zip</div></pre></td></tr></table></figure></p>
+<p>但很快就会发现这些源安装超级慢，所以推荐使用 <a href="[http://pypi.doubanio.com/simple/?allow_list_dir=1]">豆瓣的源</a> 加后缀 <code>-i http://...</code><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install matplotlib -i http://pypi.douban.com/simple --trusted-host pypi.douban.com</div></pre></td></tr></table></figure></p>
 <hr>
 <h2 id="爬虫"><a href="#爬虫" class="headerlink" title="爬虫"></a>爬虫</h2><ol>
 <li><a href="http://dataape.github.io/2017/03/10/Python-%E7%88%AC%E8%99%AB%E4%B9%8BScrapy%E6%A1%86%E6%9E%B6%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" target="_blank" rel="external">Python爬虫：Scrapy框架安装配置</a></li>
@@ -557,6 +630,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2017/05/16/python/Python-正则表达式-快速查询/" rel="prev" title="Python 正则表达式 快速查询">
+                Python 正则表达式 快速查询 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -631,7 +708,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -684,7 +761,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装教程"><span class="nav-number">1.</span> <span class="nav-text">安装教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语法教程"><span class="nav-number">2.</span> <span class="nav-text">语法教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站资源"><span class="nav-number">3.</span> <span class="nav-text">网站资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展包"><span class="nav-number">4.</span> <span class="nav-text">扩展包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#爬虫"><span class="nav-number">5.</span> <span class="nav-text">爬虫</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装教程"><span class="nav-number">1.</span> <span class="nav-text">安装教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语法教程"><span class="nav-number">2.</span> <span class="nav-text">语法教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站资源"><span class="nav-number">3.</span> <span class="nav-text">网站资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#核心库"><span class="nav-number">4.</span> <span class="nav-text">核心库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装库"><span class="nav-number">5.</span> <span class="nav-text">安装库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#源码安装"><span class="nav-number">5.1.</span> <span class="nav-text">源码安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#包管理器（pip-和-easy-install）"><span class="nav-number">5.2.</span> <span class="nav-text">包管理器（pip 和 easy_install）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-先安装-pip："><span class="nav-number">5.2.1.</span> <span class="nav-text">1. 先安装 pip：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-安装-wheel"><span class="nav-number">5.2.2.</span> <span class="nav-text">2. 安装 wheel:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-库的安装方法"><span class="nav-number">5.2.3.</span> <span class="nav-text">3. 库的安装方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#爬虫"><span class="nav-number">6.</span> <span class="nav-text">爬虫</span></a></li></ol></div>
             
 
           </div>
